@@ -1,5 +1,5 @@
 # fetch_data_analyst_exercise
-### David Marchena's Fetch Rewards Data Analyst Coding Exercise
+### David Marchena's Fetch Rewards Data Analyst Application Exercise
 
 #### Section 1:
 My data model diagram is in DataModelDiagram.pdf.  I created it using dbdiagram.io, which uses DBML to generate a customizable diagram.  
