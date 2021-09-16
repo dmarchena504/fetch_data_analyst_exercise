@@ -7,7 +7,7 @@ My data model diagram is in DataModelDiagram.pdf.  I created it using dbdiagram.
 One note about the model:  I did not include every possible field from the rewardsReceiptItemList in the ReceiptItemList table, like the descriptions, a handful of fields that only appeared on a few receipt items, etc.  These could be included in a final model, but aren't necessary for the business questions.
 
 #### Section 2:
-My queries are in Stakeholder_Questions.sql.  I chose to write queries answering the first and third business questions, though the model should be able to answer all six (given quality data).
+My queries are in Stakeholder_Questions.sql.  I chose to write queries answering the first and third business questions, though the model should be able to answer all six (given quality data).  The queries are T-SQL and are runnable in a Microsoft SQL Server environment, though the data won't actually be loaded into the database.
 
 #### Section 3:
 I used a python 3 Jupyter notebook for my data quality exploration.  This notebook is 'Data Exploration and Quality Issues.ipynb', but I've also included an HTML version if you don't have quick access to run it in Jupyter.
