@@ -14,8 +14,8 @@ CREATE TABLE FetchExerciseDB.dbo.Users (
 	Active BIT)
 
 CREATE TABLE FetchExerciseDB.dbo.Brand (
-	BrandCode VARCHAR(255) PRIMARY KEY,
-	BrandID VARCHAR(255),
+	BrandID VARCHAR(255) PRIMARY KEY,
+	BrandCode VARCHAR(255),
 	BarCode VARCHAR(255),
 	Category VARCHAR(255),
 	CategoryCode VARCHAR(255),
@@ -29,7 +29,7 @@ CREATE TABLE FetchExerciseDB.dbo.ReceiptItemList (
 	Line SMALLINT,
 	PriceAfterCoupon SMALLMONEY,
 	PointsEarned INT,
-	BrandCode VARCHAR(255) FOREIGN KEY REFERENCES FetchExerciseDB.dbo.Brand(BrandCode),
+	BrandCode VARCHAR(255),
 	ItemPrice SMALLMONEY,
 	UserFlaggedPrice SMALLMONEY,
 	Barcode VARCHAR(255),
