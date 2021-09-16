@@ -4,7 +4,9 @@
 #### Section 1:
 My data model diagram is in DataModelDiagram.pdf.  I created it using dbdiagram.io, which uses DBML to generate a customizable diagram.  
 
-One note about the model:  I did not include every possible field from the rewardsReceiptItemList in the ReceiptItemList table, like the descriptions, a handful of fields that only appeared on a few receipt items, etc.  These could be included in a final model, but aren't necessary for the business questions.
+A couple of notes about the model:  
+* I did not include every possible field from the rewardsReceiptItemList in the ReceiptItemList table, like the descriptions, a handful of fields that only appeared on a few receipt items, etc.  These could be included in a final model, but aren't necessary for the business questions.
+* The ReceiptItemList table uses a composite primary key, with ReceiptID and a Line column that indicates which line of the list for each receipt.  Generating surrogate keys would also be an option for this table.
 
 #### Section 2:
 My queries are in Stakeholder_Questions.sql.  I chose to write queries answering the first and third business questions, though the model should be able to answer all six (given quality data).  Code to create the database in a SQL Server environment is in buildDatabase.sql. The queries are T-SQL and are runnable in a Microsoft SQL Server environment, though the data won't actually be loaded into the database so they won't return anything.
