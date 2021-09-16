@@ -20,7 +20,7 @@ SELECT
 	FROM Receipt
 		GROUP BY RewardsReceiptStatus
 ;
---To  return the status with the highest average spend:
+--To  return the status with the highest average spend directly:
 WITH AvgSpentByStatus AS (
 	SELECT
 		RewardsReceiptStatus,
